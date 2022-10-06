@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .anything {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="username">
+    <br>
+    <br>
+    <input type="text" id="password" placeholder="password">
+    <br>
+    <br>
+    <button type="button" onclick="login()">Log in</button>
+
+    <script>
+        function login() {
+            let input1 = document.getElementById('username');
+            let username = input1.value;
+
+            let input2 = document.getElementById('password');
+            let password = input2.value;
+
+
+            if ((username == 'admin') && (password == '123')) {
+                alert('Welcome');
+                // '<div class="anything">asdfk</div>'
+                // input1.classList.add('anything')
+            }
+            else {
+                alert('invalid')
+            }
+
+
+
+
+
+            // if (
+            //     networkAvailable == true 
+            // && username == 'sagar' 
+            // && password == '123' 
+            // && userAllowedToPost == true) {
+            //     //whatever you have written here will get executed
+
+            // } {
+
+            // }
+
+
+
+        }
+    </script>
+</body>
+
+</html>

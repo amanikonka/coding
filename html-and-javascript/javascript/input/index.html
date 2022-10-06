@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <input type="text" id="message-box-input">
+    <input type="text" id="username-2">    
+    <button onclick="showAlertFromInput()">Add</button>
+
+    <div id="output"></div>
+
+
+    <script>
+        function showAlertFromInput() {
+            let input = document.getElementById('message-box-input')
+            let message = input.value;
+            //append into a div in the document
+            let div = document.getElementById('output')
+            div.innerHTML = div.innerHTML + `<div>${message}</div>`
+
+            
+            let username2Input = document.getElementById('username-2')
+            let username2 = username2Input.value;
+            div.innerHTML = div.innerHTML + `<div>${username2}</div>`
+
+        }
+    </script>
+
+    <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>

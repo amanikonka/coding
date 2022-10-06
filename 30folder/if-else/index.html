@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="username">
+    <button onclick="showAlert()">Show Alert</button>
+
+
+    <!-- <input type="text" id="count">
+    <button onclick="showAlertForCount()">Show Count</button> -->
+
+    <script>
+        function showAlert() {
+            let inputUsername = document.getElementById('username');
+            let username = inputUsername.value;
+
+
+            if (username == 'Jon') {
+                // only when username(textbox value) is exactly equal to 'Jon'
+                alert('Hi ' + username)
+            }
+
+            // always going to get executed after if block
+            // alert('completed')
+
+        }
+
+
+        function showAlertForCount() {
+            let inputCount = document.getElementById('count');
+            let count = inputCount.value;
+
+            if (count == 1) {
+                alert('Jon')
+            }
+
+            if(count == 2){
+                alert('Jon Jon')
+            }
+
+            if(count == 3){
+                alert('Jon Jon Jon')
+            }
+
+            if(count == 4){
+                alert('Jon Jon Jon Jon')
+            }
+        }
+    </script>
+</body>
+
+</html>

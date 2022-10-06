@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="text" maxlength="1">
+    <Button onclick="isVowel()">Check Vowel</Button>
+    <Button onclick="isDigit()">Check Digit</Button>
+    <script>
+        function isVowel() {
+            let input = document.getElementById('text')
+            if (
+                input.value == 'a' ||
+                input.value == 'e' ||
+                input.value == 'i' ||
+                input.value == 'o' ||
+                input.value == 'u'
+            ) {
+                alert('Its a vowel')
+            }
+        }
+
+        function isDigit() {
+            let input = document.getElementById('text')
+            if (
+                input.value == '0' ||
+                input.value == '1' ||
+                input.value == '2' ||
+                input.value == '3' ||
+                input.value == '4'
+            ) {
+                alert('Its a Digit')
+            }
+        }
+    </script>
+</body>
+
+</html>

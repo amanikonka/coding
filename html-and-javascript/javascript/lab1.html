@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="changeColor('blue')">Background To Blue</button>
+        <button onclick="changeColor('red')">Background To Red</button>
+        <br>
+        <br>
+        <button onclick="changeWidth('100px')">Width 100px</button>
+        <button onclick="changeWidth('200px')">Width 200px</button>
+        <button onclick="changeWidth('300px')">Width 300px</button>
+        <br>
+        <br>
+        <button onclick="changeHeight('100px')">Height 100px</button>
+        <button onclick="changeHeight('200px')">Height 200px</button>
+        <button onclick="changeHeight('300px')">Height 300px</button>
+        <br>
+        <br>
+        <button onclick="preset1()">Style 1</button>
+
+    </div>
+    <div id='container'>
+        Content
+    </div>
+
+    <script>
+
+
+        function preset1() {
+            changeColor('purple')
+            changeHeight('90px')
+            changeWidth('100%')
+        }
+
+        function changeColor(colorName) {
+            let container = document.getElementById('container');
+            container.style.backgroundColor = colorName;
+        }
+
+        function changeWidth(width) {
+            let container = document.getElementById('container');
+            container.style.width = width;
+        }
+
+        function changeHeight(height) {
+            let container = document.getElementById('container');
+            container.style.height = height;
+        }
+    </script>
+</body>
+
+</html>

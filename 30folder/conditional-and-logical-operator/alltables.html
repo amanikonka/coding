@@ -1,0 +1,35 @@
+<html>
+
+<head></head>
+
+<body>
+
+
+    enter your value here :<input type="number" id="input">
+    <button onclick="generate()">generate</button>
+    <div id="output"></div>
+
+</body>
+
+<script>
+
+
+    // take number input from the user
+
+    function generate() {
+        let input = document.getElementById("input");
+        let number = input.value;
+        for (let i = 0; i < 11; i++) {
+            let output = document.getElementById('output');
+            output.innerHTML += `<div>${number} * ${i} = ${number * i}</div>`
+            // document.write(`${number} * ${i} = ${number * i}`)
+
+            //document.write(number * i);
+
+
+
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="naresh" onclick="addNaresh()">naresh</button>
+    <button id="amani" onclick="addAmani()">amani</button>
+    <button  id="both" onclick="addBoth()">naresh and amani</button>
+    <div id="names" ></div>
+    <script>
+        function addNaresh(){
+        let div = document.getElementById('names')
+        div.innerHTML +=   '<div>naresh<div>'
+            }
+            function addAmani(){
+                let  div = document.getElementById('names')
+                div.innerHTML += '<div>amani<div>'
+            }
+            function addBoth(){
+                addNaresh();
+                addAmani();
+            }
+    </script>
+</body>
+</html>

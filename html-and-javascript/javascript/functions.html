@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <span class="blue">Sagar</span> -->
+
+    <!-- <button onclick="makeAlertKishor()">Say Hi Kishor</button>
+
+    <button onclick="makeAlertJon()">Say Hi Sagar</button>
+
+    <button onclick="makeAlertJon()">Say Hi Jon</button>
+
+    <button onclick="makeAlertAmani()">Say Hi Amani</button>
+
+    <button onclick="makeAlertLuciano()">Say Hi Luciano</button> -->
+
+    <button onclick="addJon()"> Add Jon </button>
+    <button onclick="addUzomoa()"> Add Uzomoa </button>
+
+    <div>Section 1 </div>
+    <div id="body">asjfkjsakl jfksjklf jskljfk lsadjfkl jsklfj klsadjf </div>
+
+
+    <button onclick="changeSection3Color()">Change color of Section 3</button>
+
+    <div id="monkey">Section 3</div>
+    <!-- <P>aksjdklfjlksad</P>
+
+    <button> lcickk </button> -->
+
+    <script>
+
+        function changeSection3Color() {
+            let section3 = document.getElementById('monkey')
+            // section3.innerHTML = "Monkey"
+            // section3.style.
+
+        }
+
+        function addJon() {
+            // creating a reference of an element
+            let body = document.getElementById('body');
+
+            body.innerHTML = body.innerHTML + "<br><span class='red'>Jon</span>"
+        }
+
+        function addUzomoa() {
+            let body = document.getElementById('body');
+            body.innerHTML = body.innerHTML + "<br><span class='blue'>Uzomoa</span>"
+        }
+
+        // function makeAlertKishor() {
+        //     alert(' Hi Kishor')
+        // }
+
+        // function makeAlertSagar() {
+        //     alert(' Hi Sagar')
+        // }
+
+        // function makeAlertJon() {
+        //     alert(' Hi Jon')
+        // }
+
+        // function makeAlertAmani() {
+        //     alert(' Hi Amani')
+        // }
+
+        // function makeAlertLuciano() {
+        //     alert(' Hi Luciano')
+        // }
+
+    </script>
+</body>
+
+</html>

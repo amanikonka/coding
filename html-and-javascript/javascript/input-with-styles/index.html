@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="username" placeholder="Song Name">
+    <br>
+    <br>
+    <input type="text" id="color"  placeholder="Color">
+    <br>
+    <br>
+    <input type="text" id="color"  placeholder="rating">
+    <br>
+    <br>
+    <Button onclick="addUserWithColor()">Add</Button>
+    <br>
+    <br>
+    <div id="outputDiv"></div>
+
+
+    <script>
+        function addUserWithColor(){
+            let usernameInput = document.getElementById('username')
+            let username = usernameInput.value;
+
+            let colorInput = document.getElementById('color')
+            let color = colorInput.value;
+
+            let div = document.getElementById('outputDiv')
+
+            div.innerHTML = div.innerHTML + `<div style="color:${color}">${username}</div>`
+        }
+    </script>
+</body>
+</html>

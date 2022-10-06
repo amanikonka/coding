@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Generate Number's Table</h2>
+    <input type="text" id="message-box-input" placeholder="Type number here">
+    <button onclick="showAlertFromInput()">Generate</button>
+    <h4>Output</h4>
+    <div id="output">
+        <div>2</div>
+        <div>4</div>
+        <div>6</div>
+        <div>8</div>
+        <div>10</div>
+        <div>12</div>
+        <div>14</div>
+        <div>16</div>
+        <div>18</div>
+        <div>20</div>
+    </div>
+    <script>
+        function showAlertFromInput() {
+            let input = document.getElementById('message-box-input');
+            let output = document.getElementById('output')
+
+            for (let i = 0; i < input.value; i++) {
+                output.innerHTML += "<div>Sagar</div>"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

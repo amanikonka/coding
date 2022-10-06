@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Jon{
+            color:red;
+        }
+        .Uzomoa{
+            color:blue;
+        }
+        .Sagar{
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addName('Jon')">Jon</button>
+    <button onclick="addName('Uzomoa')">Uzomoa</button>
+    <button onclick="addName('Sagar')">Sagar</button>
+
+    <div id="monkey"></div>
+
+    <script>
+
+        function addName(name) {
+            let section3 = document.getElementById('monkey')
+            section3.innerHTML = section3.innerHTML + `<div class="${name}">${name}</div>`
+        }
+
+    </script>
+</body>
+
+</html>
