@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="input" />
+    <button onclick="searchAndDisplay()">Search</button>
+    <hr>    
+    <div id="output"></div>
+    <script>
+
+        let fruits = [
+            'banana',
+            'kiwi',
+            'apple',
+            'banana',
+            'ApplE',
+            'kiwi',
+            'banana',
+            'kiwi',
+            'apple',
+            'apple'
+        ]        
+
+        function searchAndDisplay(){
+            let output = document.getElementById('output');
+            output.innerHTML = ''
+
+
+
+            for (let i = 0; i <= (fruits.length - 1); i++) {
+                let value = fruits[i].toLowerCase(); //get item in lowercase
+                let input = document.getElementById('input').value;
+                //check if input is matching with current item
+                if(value == input){
+                    output.innerHTML += `<div>${fruits[i]}</div>`;
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

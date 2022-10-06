@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="input" />
+    <button onclick="addToArray()">Add To Array</button>
+    <hr>
+    <button onclick="loadFruits()">Load</button>
+    <button onclick="loadAppleOnly()">Load Apples only</button>
+    <div id="output"></div>
+    <script>
+
+
+        // let name = "SaGaR"
+
+        // let lower =  name.toLowerCase()  // lower = sagar
+        // let upper =  name.toUpperCase()  // upper = SAGAR
+
+
+        //coming from database / server
+        let fruits = [
+            'banana',
+            'kiwi',
+            'apple',
+            'banana',
+            'ApplE',
+            'kiwi',
+            'banana',
+            'kiwi',
+            'apple',
+            'apple'
+        ]
+
+
+        function loadFruits() {
+
+            let output = document.getElementById('output');
+            output.innerHTML = ''
+
+            for (let i = 0; i <= (fruits.length - 1); i++) {
+                output.innerHTML += `<div>${fruits[i]}</div>`;
+            }
+
+            // output.innerHTML += `<div>${fruits[0]}</div>`;
+            // output.innerHTML += `<div>${fruits[1]}</div>`;
+            // output.innerHTML += `<div>${fruits[2]}</div>`;
+            // output.innerHTML += `<div>${fruits[3]}</div>`;
+
+
+        }
+
+        function loadAppleOnly(){
+            let output = document.getElementById('output');
+            output.innerHTML = ''
+
+            for (let i = 0; i <= (fruits.length - 1); i++) {
+                let value = fruits[i].toLowerCase();
+                if(value == 'apple'){
+                    output.innerHTML += `<div>${fruits[i]}</div>`;
+                }
+            }
+        }
+
+        function addToArray() {
+            // get value from input and push it into collection
+            let input = document.getElementById('input').value;
+            fruits.push(input);
+        }
+
+        //index of last item in collection =  length - 1
+
+        // questions.push('Why we need array?') // 0th location
+        // questions.push('Can We remove items from array?') // 1st location
+
+
+
+
+    </script>
+</body>
+
+</html>

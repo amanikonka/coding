@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let songList = [
+            {
+                songName: 'My Truck',
+                artistName: 'Breland',
+                rating: 4,
+                imageURL: 'breland.jpg'
+            },
+            {
+                songName: 'Vibe',
+                artistName: 'coockiee kawaii',
+                rating: 3,
+                imageURL: 'vibe.jpg'
+            }       
+        
+        ]
+
+
+        for (let i = 0; i < songList.length; i++) {
+
+            let singleSong = songList[i];
+
+            let rating = "&#x2605;".repeat(singleSong.rating);
+
+            let div = `
+            <div>
+                <span>${singleSong.imageURL}</span>
+                <span>${singleSong.songName}</span>
+                <span> By </span>
+                <span>${singleSong.artistName}</span>
+                <span>${rating}</span>
+            </div>`;
+
+            document.write(div)
+
+        }
+
+    </script>
+</body>
+
+</html>

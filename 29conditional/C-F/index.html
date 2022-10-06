@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Fahrenheit To Celsius</h1>
+    <input id="txtFahrenheit" type="number" placeholder="Value in F" value="0">
+    <br>
+    <br>
+    <button onclick="calculateCelsius()">Calculate Celsius</button>
+    <br>
+    <br>
+    <div id="output-celsius">-17.7778</div>
+    <hr>
+
+    <h1> Celsius To Fahrenheit </h1>
+
+    <input id="txtCelsius" type="number" placeholder="Value in C" value="0">
+    <br>
+    <br>
+    <button onclick="calculateFahrenheit()">Calculate Fahrenheit</button>
+    <br>
+    <br>
+    <div id="output-fahrenheit">32</div>
+    <hr>
+    <script>
+
+        function calculateFahrenheit() {
+            let inputCelsius = document.getElementById('txtCelsius');
+
+            let celsiusValue = Number(inputCelsius.value)
+
+            let fahrenheitValue =  (celsiusValue * 9 / 5) + 32
+
+            let outputDiv = document.getElementById('output-fahrenheit')
+            outputDiv.innerHTML = fahrenheitValue.toFixed(4)
+        }
+
+
+        function calculateCelsius() {
+            //
+            let inputFahrenheit = document.getElementById('txtFahrenheit');
+
+            // Number(inputFahrenheit.value)
+            let fahrenheitValue = Number(inputFahrenheit.value)
+
+            let celsiusValue = (fahrenheitValue - 32) * 5 / 9;
+
+            let outputDiv = document.getElementById('output-celsius')
+            outputDiv.innerHTML = celsiusValue.toFixed(4)
+        }
+    </script>
+</body>
+
+</html>

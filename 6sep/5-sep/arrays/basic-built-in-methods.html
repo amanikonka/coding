@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let fruits = [
+            'banana',
+            'kiwi',
+            'apple',
+            'mango',
+        ]
+
+        for (i = 0; i <= fruits.length - 1; i++) {
+            let item = `<div>${fruits[i]}`
+            document.write(item)
+        }
+
+        document.write('<hr>');
+        document.write('<h2>Pop one item</h2>');
+
+        fruits.pop()// deletes last item
+
+        for (i = 0; i <= fruits.length - 1; i++) {
+            let item = `<div>${fruits[i]}`
+            document.write(item)
+        }
+
+
+        document.write('<hr>');
+        document.write('<h2>remove first item  shift()</h2>');
+
+        fruits.shift()// deletes first item
+
+        for (i = 0; i <= fruits.length - 1; i++) {
+            let item = `<div>${fruits[i]}`
+            document.write(item)
+        }
+
+
+        document.write('<hr>');
+        document.write('<h2>push at the end  push()</h2>');
+
+        fruits.push('grape')// push at the end 
+
+        for (i = 0; i <= fruits.length - 1; i++) {
+            let item = `<div>${fruits[i]}`
+            document.write(item)
+        }
+
+
+        document.write('<hr>');
+        document.write('<h2>unshift , adds item at first position</h2>');
+
+        fruits.unshift('banana')// push at the end 
+
+        for (i = 0; i <= fruits.length - 1; i++) {
+            let item = `<div>${fruits[i]}`
+            document.write(item)
+        }
+
+
+        document.write('<hr>');
+        document.write('<h2>delete at specific location</h2>');
+
+        fruits.splice(2,1) // delete 1 item from location [2]
+
+        for (i = 0; i <= fruits.length - 1; i++) {
+            let item = `<div>${fruits[i]}`
+            document.write(item)
+        }
+        
+
+    </script>
+</body>
+
+</html>
